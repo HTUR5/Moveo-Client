@@ -1,0 +1,7 @@
+.MainPlayer {
+    display: flex;
+    height: 100vh;
+    /* padding: 67% 0%; */
+    align-items: center;
+    justify-content: center;
+}

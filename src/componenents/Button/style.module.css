@@ -1,0 +1,27 @@
+.text {
+    -webkit-text-stroke: 1.5px VAR(--brown-border-text);
+    color: white;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    /* position: relative; */
+    height: fit-content;
+    width: 90vw;
+    /* z-index: 1; */
+    padding: 6px 26px;
+    background: VAR(--orange-color);
+    border-radius: 30px;
+    border-bottom: 1px white solid;
+}
+
+.orange {
+    /* position: relative; */
+    height: fit-content;
+    width: fit-content;
+    background-color: VAR(--red-color);
+    border-radius: 30px;
+    padding-bottom: 8px;
+}

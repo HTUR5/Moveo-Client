@@ -1,0 +1,35 @@
+.whiteBox {
+    position: relative;
+    height: fit-content;
+    /* width: fit-content; */
+    width: 94vw;
+    z-index: 1;
+    /* padding: 5px; */
+    background: white;
+    border-radius: 12px;
+}
+
+
+.blackBorder {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    border-radius: 12px;
+    padding-left: 6px;
+    padding-right: 3px;
+    padding-bottom: 6px;
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.title {
+    position: absolute;
+    top: -16px;
+    -webkit-text-stroke: 1px black;
+    color: white;
+    font-size: 22px;
+    z-index: 2;
+}

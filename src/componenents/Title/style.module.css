@@ -1,0 +1,30 @@
+.shadow {
+    position: absolute;
+    /* background-color: #23aaf9; */
+    width: 76%;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 25px VAR(--orange-color);
+    z-index: -1;
+}
+
+/* position: absolute;
+    background-color: #23aaf9;
+    width: 77%;
+    border-radius: 50%;
+    box-shadow: 0 0 19px 24px #23aaf9;
+    z-index: -1; */
+
+.title {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    -webkit-text-stroke: 2.5px black;
+    color: white;
+    /* font-size: 75px; */
+}
