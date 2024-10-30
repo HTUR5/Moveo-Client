@@ -41,7 +41,9 @@ To protect user credentials, passwords are hashed using bcrypt before being stor
 
 
 <h2>A video of Admin use</h2>
-https://github.com/user-attachments/assets/d3e20e04-18c3-4a1d-9743-bb24dd0ecf7d
+https://github.com/user-attachments/assets/4647770a-c25c-44ad-b931-632fd4786d7a
+
+
 
 
 
