@@ -27,4 +27,9 @@
     -webkit-text-stroke: 2.5px black;
     color: white;
     /* font-size: 75px; */
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.he {
+    color: white;
 }

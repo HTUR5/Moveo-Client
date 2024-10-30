@@ -22,13 +22,13 @@ export default function MainAdmin() {
         if (songName) url += 'filter/' + songName
 
         const { data, error } = await useApi(url);
-        console.log(error)
         if (error) {
             setResponseError(error);
         } else {
             setPage(<ResultAdmin results={data} />)
         }
     }
+    
     return (
         <div className={styles.mainAdmin}>
             <div className={styles.title}>
@@ -44,7 +44,7 @@ export default function MainAdmin() {
                     onChange={handleInputChange}
                 />
             </TextArea>
-            <div className={styles.welcome}>
+            <div className={styles.buttons}>
                 {responseError && <p style={{ color: 'red' }}>{responseError.message}</p>}
                 <Button text='search' onClick={() => handleSearch(search)} />
                 <Button text='show all' onClick={() => handleSearch()} />
