@@ -4,7 +4,7 @@
 
 <h2>Related Repositories</h2>
 <ul>
-  <li><a href="https://github.com/HTUR5/The_band_server" target="_blank">The Band Server Repository</a></li>
+  <li><a href="https://github.com/HTUR5/Moveo-Server" target="_blank">The Band Server Repository</a></li>
 </ul>
 
 <h2>Features</h2>
