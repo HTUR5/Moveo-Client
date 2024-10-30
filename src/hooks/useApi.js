@@ -1,6 +1,7 @@
+const basePath = import.meta.env.VITE_BASE_PATH
 export const useApi = async (url, method = 'GET', body = null) => {
     try {
-        const response = await fetch(url, {
+        const response = await fetch(basePath + url, {
             method,
             headers: {
                 'Content-Type': 'application/json',

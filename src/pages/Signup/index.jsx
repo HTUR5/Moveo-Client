@@ -40,7 +40,7 @@ export default function Signup({ permission = "user" }) {
             ...formData,
             permission: permission
         };
-        const { data, error } = await useApi('http://localhost:3000/register', "POST", modifiedFormData);
+        const { data, error } = await useApi('/register', "POST", modifiedFormData);
         if (error) {
             // console.log(error)
             setResponseError(error);
@@ -66,7 +66,7 @@ export default function Signup({ permission = "user" }) {
                         maxLength={700}
                         value={formData.username}
                         onChange={handleInputChange}
-                        required 
+                        required
                     />
                 </TextArea>
                 <TextArea title="Password">
@@ -77,7 +77,7 @@ export default function Signup({ permission = "user" }) {
                         maxLength={700}
                         value={formData.password}
                         onChange={handleInputChange}
-                        required 
+                        required
                     />
                 </TextArea>
                 <TextArea title="role">
@@ -87,7 +87,7 @@ export default function Signup({ permission = "user" }) {
                         maxLength={700}
                         value={formData.instrument}
                         onChange={handleInputChange}
-                        required 
+                        required
                     />
                 </TextArea>
             </div>

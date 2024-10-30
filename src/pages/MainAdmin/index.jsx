@@ -18,7 +18,7 @@ export default function MainAdmin() {
     };
 
     const handleSearch = async (songName) => {
-        let url = 'http://localhost:3000/songs/'
+        let url = '/songs/'
         if (songName) url += 'filter/' + songName
 
         const { data, error } = await useApi(url);
@@ -45,9 +45,9 @@ export default function MainAdmin() {
                 />
             </TextArea>
             <div className={styles.welcome}>
-            {responseError && <p style={{ color: 'red' }}>{responseError.message}</p>}
-            <Button text='search' onClick={() => handleSearch(search)} />
-            <Button text='show all' onClick={() => handleSearch()} />
+                {responseError && <p style={{ color: 'red' }}>{responseError.message}</p>}
+                <Button text='search' onClick={() => handleSearch(search)} />
+                <Button text='show all' onClick={() => handleSearch()} />
             </div>
         </div>
     )

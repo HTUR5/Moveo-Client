@@ -37,14 +37,14 @@ export default function Login() {
     const handleSubmit = async () => {
         setIsLoading(true);
         setResponseError(null);
-        const { data, error } = await useApi('http://localhost:3000/login', "POST", formData);
+        const { data, error } = await useApi('/login', "POST", formData);
         if (error) {
             setResponseError(error);
         } else {
             setResponseData(data);
             setUser(data)
-            localStorage.authToken=data;
-            setSocket(io('http://localhost:3000'));
+            localStorage.authToken = data;
+            setSocket(io(import.meta.env.VITE_BASE_PATH));
             setPage(data.permission === "user" ? <MainPlayer /> : <MainAdmin />)
         }
         setIsLoading(false);
